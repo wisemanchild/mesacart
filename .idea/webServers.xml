@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1d0da71f-0ce4-440e-9703-0e3dadf18b4e" name="mesacart_test" url="http://localhost/mesacart">
+        <fileTransfer port="0" mountedRoot="Z:\xampp\htdocs\mesacart" accessType="MOUNT" />
+      </webServer>
+      <webServer id="7d2ac84e-4ca2-4ac6-bc1b-c3f2b4e3af42" name="xampp" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="" accessType="MOUNT" />
+      </webServer>
+      <webServer id="3e53f3cf-232e-4aa3-b519-b57c37c3b469" name="mesacart_remote" url="http://mesacart.nshift360.com">
+        <fileTransfer host="mesacart.nshift360.com" port="21" rootFolder="/public_html/mesacart">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_TIMESTAMP" serverName="bootstrap337">
+    <serverData>
+      <paths name="bootstrap337">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ftp.nshift360.com">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="gmli">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="mesacart_remote">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="mesacart_test">
+        <serverdata>
+          <mappings>
+            <mapping local="$USER_HOME$/OneDrive/#MESACOLLEGE/WEBD173/mesacart" web="/mesacart" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="webd170">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="xampp">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

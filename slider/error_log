@@ -1,0 +1,106 @@
+[02-Mar-2012 13:50:08] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mmaaaco'@'localhost' (using password: NO) in /home/mmaaaco/public_html/wdm3321materials/wdm3321week8/wdimcart/slider/index.php on line 91
+[02-Mar-2012 13:50:08] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mmaaaco/public_html/wdm3321materials/wdm3321week8/wdimcart/slider/index.php on line 91
+[02-Mar-2012 13:56:59] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'mmaaaco'@'localhost' (using password: NO) in /home/mmaaaco/public_html/wdm3321materials/wdm3321week8/wdimcart/slider/slider.php on line 88
+[02-Mar-2012 13:56:59] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/mmaaaco/public_html/wdm3321materials/wdm3321week8/wdimcart/slider/slider.php on line 88
+[02-Mar-2012 13:57:40] PHP Fatal error:  Call to undefined function  minslidervalue() in /home/mmaaaco/public_html/wdm3321materials/wdm3321week8/wdimcart/slider/slider.php on line 3
+[02-Mar-2012 14:02:37] PHP Warning:  Unknown: Your script possibly relies on a session side-effect which existed until PHP 4.2.3. Please be advised that the session extension does not consider global variables as a source of data, unless register_globals is enabled. You can disable this functionality and this warning by setting session.bug_compat_42 or session.bug_compat_warn to off, respectively in Unknown on line 0
+[19-Aug-2012 17:27:12] PHP Warning:  PDO::query() expects parameter 1 to be string, object given in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 100
+[19-Aug-2012 17:27:13] PHP Warning:  Invalid argument supplied for foreach() in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 100
+[19-Aug-2012 17:27:20] PHP Warning:  PDO::query() expects parameter 1 to be string, object given in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 100
+[19-Aug-2012 17:27:20] PHP Warning:  Invalid argument supplied for foreach() in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 100
+[19-Aug-2012 17:29:06] PHP Warning:  PDO::query() expects parameter 1 to be string, object given in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 100
+[19-Aug-2012 17:29:06] PHP Warning:  Invalid argument supplied for foreach() in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 100
+[19-Aug-2012 17:29:07] PHP Warning:  PDO::query() expects parameter 1 to be string, object given in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 100
+[19-Aug-2012 17:29:07] PHP Warning:  Invalid argument supplied for foreach() in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 100
+[19-Aug-2012 17:29:09] PHP Warning:  PDO::query() expects parameter 1 to be string, object given in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 100
+[19-Aug-2012 17:29:09] PHP Warning:  Invalid argument supplied for foreach() in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 100
+[19-Aug-2012 17:30:09] PHP Parse error:  syntax error, unexpected T_WHILE in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 101
+[19-Aug-2012 17:34:33] PHP Parse error:  syntax error, unexpected T_WHILE in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 101
+[19-Aug-2012 17:34:47] PHP Warning:  getimagesize(1/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 128
+[19-Aug-2012 17:34:47] PHP Warning:  getimagesize(2/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 128
+[19-Aug-2012 17:34:47] PHP Warning:  getimagesize(3/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 128
+[19-Aug-2012 17:34:47] PHP Warning:  getimagesize(19/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php on line 128
+[19-Aug-2012 17:37:55] PHP Warning:  getimagesize(1/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:55] PHP Warning:  getimagesize(2/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:55] PHP Warning:  getimagesize(3/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:56] PHP Warning:  getimagesize(1/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:56] PHP Warning:  getimagesize(2/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:56] PHP Warning:  getimagesize(3/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:56] PHP Warning:  getimagesize(1/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:56] PHP Warning:  getimagesize(2/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:56] PHP Warning:  getimagesize(3/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:57] PHP Warning:  getimagesize(1/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:57] PHP Warning:  getimagesize(2/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:57] PHP Warning:  getimagesize(1/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:57] PHP Warning:  getimagesize(2/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:57] PHP Warning:  getimagesize(3/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:57] PHP Warning:  getimagesize(1/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[19-Aug-2012 17:37:57] PHP Warning:  getimagesize(2/1.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php on line 34
+[18-Dec-2014 01:53:12 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'mmaaaco_ksecor'@'localhost' (using password: YES)' in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php:7
+Stack trace:
+#0 /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php(7): PDO->__construct('mysql:host=loca...', 'mmaaaco_ksecor', 'hamilton')
+#1 /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php(2): require('/home/mmaaaco/p...')
+#2 {main}
+  thrown in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php on line 7
+[19-Dec-2014 00:08:37 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'mmaaaco_ksecor'@'localhost' (using password: YES)' in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php:7
+Stack trace:
+#0 /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php(7): PDO->__construct('mysql:host=loca...', 'mmaaaco_ksecor', 'hamilton')
+#1 /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php(2): require('/home/mmaaaco/p...')
+#2 {main}
+  thrown in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php on line 7
+[21-Dec-2014 14:21:45 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'mmaaaco_ksecor'@'localhost' (using password: YES)' in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php:7
+Stack trace:
+#0 /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php(7): PDO->__construct('mysql:host=loca...', 'mmaaaco_ksecor', 'hamilton')
+#1 /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php(2): require('/home/mmaaaco/p...')
+#2 {main}
+  thrown in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php on line 7
+[23-Dec-2014 14:35:17 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'mmaaaco_ksecor'@'localhost' (using password: YES)' in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php:7
+Stack trace:
+#0 /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php(7): PDO->__construct('mysql:host=loca...', 'mmaaaco_ksecor', 'hamilton')
+#1 /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php(2): require('/home/mmaaaco/p...')
+#2 {main}
+  thrown in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php on line 7
+[24-Dec-2014 04:28:48 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'mmaaaco_ksecor'@'localhost' (using password: YES)' in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php:7
+Stack trace:
+#0 /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php(7): PDO->__construct('mysql:host=loca...', 'mmaaaco_ksecor', 'hamilton')
+#1 /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php(2): require('/home/mmaaaco/p...')
+#2 {main}
+  thrown in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php on line 7
+[01-Jan-2015 08:24:36 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'mmaaaco_ksecor'@'localhost' (using password: YES)' in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php:7
+Stack trace:
+#0 /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php(7): PDO->__construct('mysql:host=loca...', 'mmaaaco_ksecor', 'hamilton')
+#1 /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php(2): require('/home/mmaaaco/p...')
+#2 {main}
+  thrown in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php on line 7
+[15-Jan-2015 05:15:08 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'mmaaaco_ksecor'@'localhost' (using password: YES)' in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php:7
+Stack trace:
+#0 /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php(7): PDO->__construct('mysql:host=loca...', 'mmaaaco_ksecor', 'hamilton')
+#1 /home/mmaaaco/public_html/wdimcart/wdimcart/slider/ajaxSlider.php(2): require('/home/mmaaaco/p...')
+#2 {main}
+  thrown in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php on line 7
+[15-Jan-2015 05:15:11 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'mmaaaco_ksecor'@'localhost' (using password: YES)' in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php:7
+Stack trace:
+#0 /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php(7): PDO->__construct('mysql:host=loca...', 'mmaaaco_ksecor', 'hamilton')
+#1 /home/mmaaaco/public_html/wdimcart/wdimcart/slider/slider.php(2): require('/home/mmaaaco/p...')
+#2 {main}
+  thrown in /home/mmaaaco/public_html/wdimcart/wdimcart/connect.php on line 7
+[09-Aug-2015 01:53:26 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickWand.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[10-Aug-2015 10:10:52 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[10-Aug-2015 12:01:17 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[11-Aug-2015 11:39:09 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[11-Aug-2015 16:06:36 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Aug-2015 01:22:44 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Aug-2015 09:53:26 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Aug-2015 15:44:46 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Aug-2015 20:09:55 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[18-Aug-2015 16:00:42 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[25-Aug-2015 16:32:04 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[27-Aug-2015 23:10:04 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Sep-2015 04:32:13 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Sep-2015 20:32:06 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[22-Sep-2015 13:01:07 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Sep-2015 00:12:47 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Sep-2015 23:39:38 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - libMagickCore.so.2: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Sep-2016 18:32:31 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[10-Sep-2016 15:41:40 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[09-Oct-2016 03:13:04 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/imagick.so: cannot open shared object file: No such file or directory in Unknown on line 0

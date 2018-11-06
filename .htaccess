@@ -1,0 +1,9 @@
+ErrorDocument 404 /index.php
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^good-american$ product.php?pid=1 [L]
+RewriteRule ^hanes-tshirts$ product.php?pid=23 [L]
+RewriteRule ^catching-test$ product.php?pid=2 [L]
+RewriteRule ^ivy-bean$ product.php?pid=3 [L]
+RewriteRule ^enchantments$ product.php?pid=4 [L]
+RewriteRule ^brown-recliner$ product.php?pid=21 [L]
