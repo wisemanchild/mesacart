@@ -1,7 +1,7 @@
 <?
 echo '<style>
     #desc {
-    color: red;
+    color: green;
     }
 </style>';
 
