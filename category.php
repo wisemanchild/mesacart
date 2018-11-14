@@ -1,4 +1,18 @@
 <?
+<!--/*
+* HTML FILE INFO
+*    Application:final 173 ecommerce project
+*   Description: code for the prototype
+*     File Name: category.php
+*        Author: Norman McWilliams     Tester:
+*  Date created: 10-28-2019            Date updated: 10-28-2019
+*  Time created: 12:38pm          Time updated: 12:38pm
+*     Revisions: 1.0
+*     Copyright: (c) 2018 Norlab Business Solutions
+*   some code is from mesacart, bootstrap,
+* */-->
+echo '<head>
+
 echo '<style>
     #desc {
     color: green;
