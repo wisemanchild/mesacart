@@ -23,6 +23,8 @@ echo '<head>
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
 <!-- font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+/*** CSS override section begin ***/
 <style>
 .nlm-ctr {
 /*	align-content: center; */
@@ -97,12 +99,13 @@ footer {
     display: none;
   }
 }
-    
+/*** css override section ends ***/    
 </style>
 </head>';
 require 'connect.php';
 
 ?>
+/*** where the menu nav-bar section starts ***/
 <header class="container-fluid">
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#" class="text-right"><img src="images/logo.png" width=50 height=50
@@ -156,11 +159,12 @@ require 'connect.php';
                 </ul>
                 <span class="navbar-text">
 <!--
+************** keeping this section in case I want to put it back on the main nav-bar ***/
 			  <form class="form-inline" action="searchres.php" method="post">
     <label>Search:</label>
     <input type="text" name="query" class="fas fa-search" placeholder="Search"/>
     <input type="submit" name="submit" value="Search! "/>
-
+*****************************************************************************************
 </form>-->
 
     </span>
@@ -177,7 +181,7 @@ require 'connect.php';
 </form>
 </div>-->
 
-<div class="jumbotron text-center">
+<section class="jumbotron text-center container">
     <h1 class="display-4">Norlab Shopping Solutions
         <small>"Send it to the Lab!"</small>
     </h1>
@@ -185,7 +189,7 @@ require 'connect.php';
     <hr class="my-4">
     <!--<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-</div>
+</section>
 <?php
 $sql = "select id, name from $maincategory";
 echo '<div class="row justify-content-center">';
