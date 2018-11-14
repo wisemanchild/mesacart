@@ -103,7 +103,7 @@ footer {
 require 'connect.php';
 
 ?>
-<div class="container-fluid">
+<header class="container-fluid">
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#" class="text-right"><img src="images/logo.png" width=50 height=50
                                                                  alt="Norlab Business Solutions">
@@ -166,7 +166,7 @@ require 'connect.php';
     </span>
             </div>
     </nav>
-</div>
+</header>
 <!--<div class="row">
 <form class="form-inline" action="searchres.php" method="post">
 
@@ -176,8 +176,17 @@ require 'connect.php';
     <input type="submit" name="submit" value="Search!"/>
 </form>
 </div>-->
-<?
 
+<div class="jumbotron text-center">
+    <h1 class="display-4">Norlab Shopping Solutions
+        <small>"Send it to the Lab!"</small>
+    </h1>
+    <p class="lead">"The place where you can find all things internet"</p>
+    <hr class="my-4">
+    <!--<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+<?php
 $sql = "select id, name from $maincategory";
 echo '<div class="row justify-content-center">';
 foreach ( $dbh->query( $sql ) as $mainrow ) {
@@ -244,6 +253,16 @@ from $spec,$products,$category where $products.id = $spec.prodid and $products.c
 		echo '</span><br/><br/><br/>';
 	}
 	$dbh = null;
+	echo '<br/>
+	<br/>
+    <br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>';
 	echo '<footer class="container-fluid bg-secondary test-white fixed-bottom">
         <br>
         <div class="row justify-content-center">
