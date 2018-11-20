@@ -1,19 +1,16 @@
 <!--
 *
 HTML FILE INFO
-	*
-	Application: final 173 ecommerce project *
-	Description: code
-for the prototype
-	*
-	File Name: untittled . php *
-	Author: Norman McWilliams Tester:
-	*
-	Date created: 10 - 28 - 2019 Date updated: 10 - 28 - 2019 *
-	Time created: 12: 38 pm Time updated: 12: 38 pm *
-	Revisions: 1.0 *
-	Copyright: ( c )2018 Norlab Business Solutions *
-	-->
+	* Application: final 173 ecommerce project 
+	* Description: code for the prototype
+	* File Name: untittled . php 
+	* Author: Norman McWilliams Tester:
+	* Date created: 10 - 28 - 2019 Date updated: 10 - 28 - 2019 
+	* Time created: 12: 38 pm Time updated: 12: 38 pm 
+	* Revisions: 1.0 
+	* Copyright: ( c )2018 Norlab Business Solutions 
+	* 
+-->
 	<!--/* added this for responsive design */ -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,13 +21,8 @@ for the prototype
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
 <!-- font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-<?php
-// ob_start();
-?>
+<?php ob_start(); ?>
 <head>
-
-
-
 	<!--/*** CSS override section begin ***/-->
 	<style>
 		.nlm-ctr {
@@ -136,7 +128,6 @@ for the prototype
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-	
 
 		<div id="navbar-nlm-space">
 			<div class="navbar-spacing collapse navbar-collapse" id="navbarText">
@@ -217,7 +208,7 @@ for the prototype
 
 <?php
 $sql = "select id, name from $maincategory";
-echo '<div class="row justify-content-center">';
+print '<div class="row justify-content-center">';
 foreach ( $dbh->query( $sql ) as $mainrow ) {
 	$id = $mainrow[ 0 ];
 	$name = $mainrow[ 1 ];
@@ -228,7 +219,7 @@ foreach ( $dbh->query( $sql ) as $mainrow ) {
 	//
 	//  echo '<img src = "http://mesacart.nshift360.com/images/'.$new.'" alt="'.$variable.'"/>';
 	//echo '<h5>' . $name . '</h5>';
-	echo '<div class="col-md-3">
+	print '<div class="col-md-3">
     <div class="card"> <img class="card-img-top" src="http://mesacart.nshift360.com/images/' . $new . '" alt="' . $variable . '" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">' . $name . '</span></h5>
@@ -236,7 +227,7 @@ foreach ( $dbh->query( $sql ) as $mainrow ) {
         <a href="" </p>
       </div>
       <ul class="list-group list-group-flush justify-content-center">
-       <!-- <li class="list-group-item">Cras justo odio</li>-->
+       <li class="list-group-item">Cras justo odio</li>
        <!-- <li class="list-group-item">Dapibus ac facilisis in</li>-->
       </ul>
       <!--<div class="card-body"> <a href="#" class="card-link">Card link</a> <a href="#" class="card-link">Another link</a> </div>-->
@@ -254,9 +245,10 @@ foreach ( $dbh->query( $sql ) as $mainrow ) {
 		//		echo '<a href = "' . $root . 'category.php?catid=' . $catid . '"> ' . $catname . '</a>' . $prodCount . '<br/>';
 	}
 }
-echo '</div>'
-	// include 'pricefilter.php';
+
+// include 'pricefilter.php';
 ?>
+</div>
 <row class="container">
 	<div class="col-md-4">
 		<p><a href="slider/slider.php"><i class="fas fa-sliders-h"></i> Check out our price slider</a>
@@ -267,12 +259,12 @@ echo '</div>'
 		</p>
 	</div>
 </row>
-<?
+<?php
 $secondsql = "select $products.id,$products.name,$products.descrip,$products.price,$category.id,$category.name 
 from $spec,$products,$category where $products.id = $spec.prodid and $products.catid = $category.id and $spec.spec = 'yes'";
 ?>
 <div id="products">
-	<?
+	<?php
 
 	$stm = $dbh->prepare( $secondsql );
 	$stm->execute();
@@ -280,66 +272,83 @@ from $spec,$products,$category where $products.id = $spec.prodid and $products.c
 
 	foreach ( $stm->fetchAll() as $secondrow ) {
 		echo '<span class="product">';
-		$img     = $secondrow[0] . '/1.jpg';
-		$name    = $secondrow[1];
-		$desc    = $secondrow[2];
-		$price   = $secondrow[3];
-		$catid   = $secondrow[4];
-		$catname = $secondrow[5];
+		$img = $secondrow[ 0 ] . '/1.jpg';
+		$name = $secondrow[ 1 ];
+		$desc = $secondrow[ 2 ];
+		$price = $secondrow[ 3 ];
+		$catid = $secondrow[ 4 ];
+		$catname = $secondrow[ 5 ];
 		echo '<img src = "' . $root . 'thumbnail.php?pic=' . $img . '&ht=150&wd=150" alt="' . $name . '">';
 		echo $name . '<br/>' . $desc . '<br/>' . $price . '<br/><a href = "' . $root . 'category.php?catid=' . $catid . '">View All Products from this Category</a>';
 		echo '</span><br/><br/><br/>';
 	}
 	$dbh = null;
-	echo '<br/>
-	<br/>
-    <br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>';
-	echo '<footer class="container-fluid bg-secondary test-white">
-        <br>
-        <div class="row justify-content-center">
-            <div class="col-md-4 text-white"><small>CONTACT US</small></div>
-            <div class="col-md-4 text-white">SERVICES</div>
-            <div class="col-md-4 text-white">INFORMATION</div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4 text-white"><small> Tel: (858)555-1212</small></div>
-            <div class="col-md-4 text-white"><small>Contact Us</small></div>
-            <div class="col-md-4 text-white">Work With US</div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4 text-white"><small>EMAIL: info@nshift360.com</small></div>
-            <div class="col-md-4 text-white"><small>Ordering & Payment</small></div>
-            <div class="col-md-4 text-white">Privacy Policy</div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4 text-white"><small>San Diego Office </small></div>
-            <div class="col-md-4 text-white"><small>FAQ</small></div>
-            <div class="col-md-4 text-white"><small>Terms & Conditions</small></div>
-            <div class="col-md-4 text-white"><small></small></div>            
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4 text-white"><small></small></div>
-            <div class="col-md-4 text-white"><small>Web Design and Development</small></div>
-            <div class="col-md-4 text-white"><small>Press Enquiries</small></div>            
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4 text-white"><small></small></div>
-            <div class="col-md-4 text-white"><small>Consulting Services</small></div>
-            <div class="col-md-4 text-white"><small></small></div>            
-        </div>
-        <br>
-	</footer>';
-	// <!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
-	echo '<script src="js/jquery-3.2.1.min.js"></script>';
-
-	//<!-- Include all compiled plugins (below), or include individual files as needed -->
-	echo '<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.0.0.js"></script>';
 	?>
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<footer class="container-fluid bg-secondary test-white">
+		<br>
+		<div class="row justify-content-center">
+			<div class="col-md-4 text-white"><small>CONTACT US</small>
+			</div>
+			<div class="col-md-4 text-white">SERVICES</div>
+			<div class="col-md-4 text-white">INFORMATION</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-4 text-white"><small> Tel: (858)555-1212</small>
+			</div>
+			<div class="col-md-4 text-white"><small>Contact Us</small>
+			</div>
+			<div class="col-md-4 text-white">Work With US</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-4 text-white"><small>EMAIL: info@nshift360.com</small>
+			</div>
+			<div class="col-md-4 text-white"><small>Ordering & Payment</small>
+			</div>
+			<div class="col-md-4 text-white">Privacy Policy</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-4 text-white"><small>San Diego Office </small>
+			</div>
+			<div class="col-md-4 text-white"><small>FAQ</small>
+			</div>
+			<div class="col-md-4 text-white"><small>Terms & Conditions</small>
+			</div>
+			<div class="col-md-4 text-white"><small></small>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-4 text-white"><small></small>
+			</div>
+			<div class="col-md-4 text-white"><small>Web Design and Development</small>
+			</div>
+			<div class="col-md-4 text-white"><small>Press Enquiries</small>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-4 text-white"><small></small>
+			</div>
+			<div class="col-md-4 text-white"><small>Consulting Services</small>
+			</div>
+			<div class="col-md-4 text-white"><small></small>
+			</div>
+		</div>
+		<br>
+	</footer>
+	<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.0.0.js"></script>
+	
