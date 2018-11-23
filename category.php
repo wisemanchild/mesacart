@@ -1,8 +1,6 @@
 <?php
 require 'connect.php';
-// ob_start(); 
 include 'nlm_header.php';
-
 $string = $_SERVER['QUERY_STRING'];	
 $qty = $_POST['qty'];
 if ($qty > 0)
@@ -84,7 +82,7 @@ if ($sort == 'pricelow'){
 
 $innersql = "select * from $products where catid = '$catid'  $dynamicqry limit  $start,$numperpage";
 
-echo "<br/>select * from $products where catid = '$catid'  $dynamicqry limit  $start,$numperpage<br/>";
+echo "<h1><br/>select * from $products where catid = '$catid'  $dynamicqry limit  $start,$numperpage<br/></h1>";
   foreach ($dbh->query($innersql) as $row)
      {
 	$id = $row['0'];
@@ -120,7 +118,7 @@ echo '<br/>$'.$price;
   ?>
 <form action = "category.php?catid=<?= $catid;?>" method="post">
   <input type="hidden" name = "itemid" value = "<?= $id;?>" />
-  <?php
+  <?
 if (count($atribarray)>1)
    {
 echo '<select name = "options">';   
@@ -137,7 +135,7 @@ echo '</select>';
   <input type = "submit" value = "add to cart" />
 </form>
 <br/>
-<?php 
+<? 
   unset($descrip);
    }
 $y = $page - 1;
@@ -157,4 +155,4 @@ echo $url;
 ?>
 <br/>
 <br />
-<a href = "<?php= $root;?>viewcart.php">View your cart</a> 
+<a href = "<?= $root;?>viewcart.php">View your cart</a> 
