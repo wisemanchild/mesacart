@@ -1,30 +1,35 @@
 <!--
 *
 HTML FILE INFO
-	* Application: final 173 ecommerce project 
-	* Description: code for the prototype
-	* File Name: untittled . php 
-	* Author: Norman McWilliams Tester:
-	* Date created: 10 - 28 - 2019 Date updated: 10 - 28 - 2019 
-	* Time created: 12: 38 pm Time updated: 12: 38 pm 
-	* Revisions: 1.0 
-	* Copyright: ( c )2018 Norlab Business Solutions 
-	* 
--->
+	*
+	Application: final 173 ecommerce project *
+	Description: code
+for the prototype
+	*
+	File Name: untittled . php *
+	Author: Norman McWilliams Tester:
+	*
+	Date created: 10 - 28 - 2019 Date updated: 10 - 28 - 2019 *
+	Time created: 12: 38 pm Time updated: 12: 38 pm *
+	Revisions: 1.0 *
+	Copyright: ( c )2018 Norlab Business Solutions *
+	-->
 	<!--/* added this for responsive design */ -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Main Mesacart Page</title>
-
+<!--<!--
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
 <!-- font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-<?php ob_start(); ?>
-<head>
+<?php //ob_start(); 
+include 'nlm_header.php';
+?>
+<head>-->
 	<!--/*** CSS override section begin ***/-->
-	<style>
+<!--	<style>
 		.nlm-ctr {
 			/*	align-content: center; */
 			text-align: center;
@@ -101,7 +106,8 @@ HTML FILE INFO
 			font-size: 1.5em;
 		}
 		
-		<!-- media query --> @media (max-width: 1900px) {
+		<!-- media query --> 
+<!--	@media (max-width: 1900px) {
 			#navbar-nlm-space ul {
 				padding-left: 30%;
 			}
@@ -114,8 +120,8 @@ HTML FILE INFO
 		}
 		/*** css override section ends ***/
 	</style>
-</head>
-<?php require 'connect.php'; ?>
+</head>-->
+--><?php require 'connect.php'; ?>
 
 
 <!--/*** where the menu nav-bar section starts ***/-->
@@ -128,6 +134,7 @@ HTML FILE INFO
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+	
 
 		<div id="navbar-nlm-space">
 			<div class="navbar-spacing collapse navbar-collapse" id="navbarText">
@@ -179,7 +186,7 @@ HTML FILE INFO
     <input type="submit" name="submit" value="Search! "/>
 *****************************************************************************************
 </form>-->
-
+<!-- end of menu sections -->
 
 			</div>
 	</nav>
@@ -193,7 +200,18 @@ HTML FILE INFO
 		<p class="lead">"The place where you can find all things internet"</p>
 		<hr class="my-4">
 		<!--<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
-		<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+		<!--<row class="container">-->
+			<!--<div class="col-md-4">-->
+				<a class="btn btn-primary btn-lg fas fa-sliders-h" href="slider/slider.php" role="button"> Check out our price slider</a>
+				<!--<a href="slider/slider.php"><i class="fas fa-sliders-h"></i> Check out our price slider</a>-->
+			<!--</div>-->
+			<!--<div class="col-md-4">-->
+				<a class="btn btn-primary btn-lg fas fa-shopping-cart" href="viewcart.php" role="button"> View your cart</a>
+				<!--<a href="viewcart.php"> <i class="btn btn-lg fas fa-shopping-cart"></i> View your cart</a>-->
+            <!--</div>-->
+
+		<!--</row>-->
 	</section>
 </header>
 <!--<div class="row">
@@ -227,7 +245,7 @@ foreach ( $dbh->query( $sql ) as $mainrow ) {
         <a href="" </p>
       </div>
       <ul class="list-group list-group-flush justify-content-center">
-       <li class="list-group-item">Cras justo odio</li>
+       <!-- <li class="list-group-item">Cras justo odio</li>-->
        <!-- <li class="list-group-item">Dapibus ac facilisis in</li>-->
       </ul>
       <!--<div class="card-body"> <a href="#" class="card-link">Card link</a> <a href="#" class="card-link">Another link</a> </div>-->
@@ -248,8 +266,8 @@ foreach ( $dbh->query( $sql ) as $mainrow ) {
 
 // include 'pricefilter.php';
 ?>
-</div>
-<row class="container">
+</div> 
+<!--	<row class = "container" >
 	<div class="col-md-4">
 		<p><a href="slider/slider.php"><i class="fas fa-sliders-h"></i> Check out our price slider</a>
 	</div>
@@ -257,8 +275,8 @@ foreach ( $dbh->query( $sql ) as $mainrow ) {
 	<div class="col-md-4">
 		<p><a href="viewcart.php"> <i class="fas fa-shopping-cart"></i> View your cart</a>
 		</p>
-	</div>
-</row>
+	</div> 
+	</row>-->
 <?php
 $secondsql = "select $products.id,$products.name,$products.descrip,$products.price,$category.id,$category.name 
 from $spec,$products,$category where $products.id = $spec.prodid and $products.catid = $category.id and $spec.spec = 'yes'";
@@ -351,4 +369,3 @@ from $spec,$products,$category where $products.id = $spec.prodid and $products.c
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.0.0.js"></script>
-	
