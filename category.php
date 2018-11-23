@@ -1,27 +1,9 @@
-<?
-<!--/*
-* HTML FILE INFO
-*    Application:final 173 ecommerce project
-*   Description: code for the prototype
-*     File Name: category.php
-*        Author: Norman McWilliams     Tester:
-*  Date created: 10-28-2019            Date updated: 10-28-2019
-*  Time created: 12:38pm          Time updated: 12:38pm
-*     Revisions: 1.0
-*     Copyright: (c) 2018 Norlab Business Solutions
-*   some code is from mesacart, bootstrap,
-* */-->
-echo '<head>
-
-echo '<style>
-    #desc {
-    color: green;
-    }
-</style>';
-
+<?php
 require 'connect.php';
+// ob_start(); 
+include 'nlm_header.php';
 
-$string = $_SERVER['QUERY_STRING'];
+$string = $_SERVER['QUERY_STRING'];	
 $qty = $_POST['qty'];
 if ($qty > 0)
     {
@@ -120,25 +102,25 @@ $numsentences = count($descarray);
 $catname = trim($catname);
 for ($i = 0;$i<$numsentences-1;$i++)
     {
-	$descrip .= $descarray[$i].". ";
+	$descrip .= $descarray[$i].". ";	 
     }
- $descrip .= '  <a href = "'.$link.'"><h1>Reads More</h1></a>';
+ $descrip .= '  <a href = "'.$link.'">Read More</a>';
 $price = $row[3]; 
 $img = $id.'/1.jpg';
-echo $name.'<br/><h1 id="desc">'.$descrip.'<br/></h1>';
+echo $name.'<br/>'.$descrip.'<br/>';
 if (file_exists($img))
   {
 $size = getimagesize($img);
 $height = $size[1];
 $width = $size[0];
-echo '<span id="image"><a href = "#" onclick="window.open(\''.$img.'\',\'\',\'height='.$height.',width='.$width.'\');"><img src = "./thumbnail.php?pic='.$img.'&ht=100&wd=100"></a></span>';
+echo '<a href = "#" onclick="window.open(\''.$img.'\',\'\',\'height='.$height.',width='.$width.'\');"><img src = "./thumbnail.php?pic='.$img.'&ht=100&wd=100"></a>';
   }
-echo '<br/><span id="price">$'.$price . '</span>';
+echo '<br/>$'.$price;  
   $desc = '';
   ?>
 <form action = "category.php?catid=<?= $catid;?>" method="post">
   <input type="hidden" name = "itemid" value = "<?= $id;?>" />
-  <?
+  <?php
 if (count($atribarray)>1)
    {
 echo '<select name = "options">';   
@@ -155,7 +137,7 @@ echo '</select>';
   <input type = "submit" value = "add to cart" />
 </form>
 <br/>
-<? 
+<?php 
   unset($descrip);
    }
 $y = $page - 1;
@@ -175,4 +157,4 @@ echo $url;
 ?>
 <br/>
 <br />
-<a href = "<?= $root;?>viewcart.php">View your cart</a> 
+<a href = "<?php= $root;?>viewcart.php">View your cart</a> 
