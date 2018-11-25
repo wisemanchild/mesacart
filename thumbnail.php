@@ -1,4 +1,17 @@
-<?
+<!--
+*
+HTML FILE INFO
+	* Application: final 173 ecommerce project 
+	* Description: code for the prototype
+	* File Name: thumbnail.php 
+	* Author: mesacart original:
+	* Date created: 10 - 28 - 2019 Date updated: 10 - 28 - 2019 
+	* Time created: 12: 38 pm Time updated: 12: 38 pm 
+	* Revisions: 1.0 
+	* Copyright: ( c )2018 Norlab Business Solutions 
+	* 
+-->
+<?php
 $pic = $_GET['pic'];
 $max_height = $_GET['wd'];
 $max_width = $_GET['ht'];

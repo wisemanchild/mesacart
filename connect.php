@@ -1,3 +1,15 @@
+<!--
+    *   HTML FILE INFO
+	*	Application: final 173 ecommerce project
+	*	Description: code for the prototype
+	*	File Name: connect.php
+	*	Author: Norman McWilliams Tester:
+	*	Date created: 11-24-2018 Date updated: 11-24-2018
+	*	Time created: 05:21 pm Time updated: 05:21 pm
+	*	Revisions: 2.0
+	*	Copyright: ( c )2018 Norlab Business Solutions
+	*
+-->
 <?php
 //error_reporting(E_ALL);mesacart_remote;
 session_start();

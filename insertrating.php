@@ -1,5 +1,7 @@
-<?
-$dbh = new PDO("mysql:host=localhost;dbname=mmaaaco_ksecor", "mmaaaco_ksecor", "hamilton");
+
+<?php
+// $dbh = new PDO("mysql:host=localhost;dbname=mmaaaco_ksecor", "mmaaaco_ksecor", "hamilton");
+$dbh = new PDO("mysql:host=$hostname;dbname=mesacart", $username, $password);
 $prodid = $_GET['product'];
 $rating = $_GET['rating'];
 $kris = $dbh->prepare("insert into 3321_ratings (prodid,rating) values (?,?)");

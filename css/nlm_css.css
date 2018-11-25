@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document 
+* HTML FILE INFO
+* Application: final 173 ecommerce project 
+* Description: my css for bootstrap overides
+* File Name: nlm_css.css
+* Author: Norman McWilliams Tester:
+* Date created: 11/20/2018 Date updated:11/20/2018 
+* Time created: 8:35 AM Time updated: 8:35 AM 
+* Revisions: 1.0 
+* Copyright: ( c )2018 Norlab Business Solutions 
+*
+*/
+
+/*** CSS override section begin ***/-->
+ /*** CSS override section begin ***/
+
+ .nlm-ctr {
+			/*	align-content: center; */
+			text-align: center;
+}
+.fa-angle-left, .fa-angle-right {
+    font-size: 6em;
+    padding-top: 3em;
+}
+/** Making bootstrap columns a little bit small making room for arrows ***/
+		
+.col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 33.30%;
+    max-width: 30%;
+}
+#navbar-nlm-space {
+    width: 100%;
+    background-color: bg-secondary;
+    color: yellow;
+    text-align: center;
+    letter-spacing: .30em;
+}
+.mr-auto {
+    background-color: navbar-dark;
+    width: 100%;
+    margin: 10, 10, 10, 10;
+}
+/*  .navbar-item {
+        float: right !important;
+       word-spacing: 40px !important;
+    }*/
+		
+#navbar-nlm-space ul {
+    padding-left: 50%;
+}
+.nlm_icons {
+    height: 45;
+    width: 60;
+}
+.nlm_cart {
+    color: white;
+    font-size: 2em;
+}
+ .nlm_cart a::hover {
+ background-color: #FF7A00;
+}
+/* font awesome font size */
+		
+.navbar-nav .fas {
+    font-size: 3em;
+    padding-right: .5em;
+    text-align: center;
+    color: whitesmoke;
+}
+.jumbotron_gradient {
+    background: linear-gradient(to bottom, grey 0%, lightgrey 100%);
+}
+.nlm-float-left {
+    padding-left: 80%;
+    font-size: 1.5em;
+}
+footer {
+    font-size: 1.5em;
+}
+
+/*media query*/
+
+@media (max-width: 1900px) {
+#navbar-nlm-space ul {
+    padding-left: 30%;
+}
+}
+
+@media (max-width: 992px) {
+footer {
+    display: none;
+}
+}
+		/*** css override section ends ***/
+	
+		/*** css override section ends ***/

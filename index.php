@@ -2,18 +2,17 @@
 *
 HTML FILE INFO
 	*
-	Application: final 173 ecommerce project *
-	Description: code
-for the prototype
+	Application: final 173 ecommerce project
+	*	Description: code for the prototype
+	*	File Name: untittled . php
+	*	Author: Norman McWilliams Tester:
+	*	Date created: 10 - 28 - 2019 Date updated: 10 - 28 - 2019
+	*	Time created: 12: 38 pm Time updated: 12: 38 pm
+	*	Revisions: 1.0
+	*	Copyright: ( c )2018 Norlab Business Solutions
 	*
-	File Name: untittled . php *
-	Author: Norman McWilliams Tester:
-	*
-	Date created: 10 - 28 - 2019 Date updated: 10 - 28 - 2019 *
-	Time created: 12: 38 pm Time updated: 12: 38 pm *
-	Revisions: 1.0 *
-	Copyright: ( c )2018 Norlab Business Solutions *
 	-->
+
 	<!--/* added this for responsive design */ -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,22 +20,26 @@ for the prototype
 	<title>Main Mesacart Page</title>
 	<!--<!--
 	<!-- Bootstrap -->
-	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+	<link href="css/bootstrap-4.1.3.css" rel="stylesheet">
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<?php ob_start(); 
-include 'nlm_header.php';
+	include 'nlm_header.php';
 ?>
 
-<?php require 'connect.php'; ?>
+<?php require 'connect.php'; 
+?>
 
 
-<!--/*** where the menu nav-bar section starts ***/-->
+<!--/*** where the menu nav-bar section starts ***/
+    /* nav-bar moved to nlm_header.php */
+-->
 
 <section class="jumbotron text-left jumbotron_gradient">
-	<!--    <div class="float-left nlm-float-left">
+	<!--
+	    <div class="float-left nlm-float-left">
         <a href="slider/slider.php"><i class="fas fa-sliders-h"></i> Check out our price slider</a></div>
-    <div class="float-left nlm-float-left"><a href="viewcart.php"> <i class="fas fa-shopping-cart"></i> View your cart</a></div><br/>
+        <div class="float-left nlm-float-left"><a href="viewcart.php"> <i class="fas fa-shopping-cart"></i> View your cart</a></div><br/>
 -->
 	<h1 class="display-4">Norlab Shopping Solutions<small>"Send it to the Lab!"</small>
     </h1>
@@ -152,4 +155,4 @@ from $spec,$products,$category where $products.id = $spec.prodid and $products.c
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap-4.0.0.js"></script>
+	<script src="js/bootstrap-4.1.3.js"></script>

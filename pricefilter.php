@@ -1,5 +1,5 @@
 Price Filter<br/>
-<?
+<?php
 //get max and min prices
 $sth = $dbh->prepare("select min(price) as mini, max(price) as maxi from $products");
 $sth->execute();
