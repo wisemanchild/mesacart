@@ -221,7 +221,7 @@ include 'nlm_header.php';
 
     <form action="https://www.sandbox.paypal.com/us/cgi-bin/webscr"
           method="post" name="_xclick">
-        <h5>Shipping:</h5>
+        <h4>Shipping:</h4>
         <!--<div class="row">-->
         <TABLE BORDER="0">
             <TR>
@@ -249,11 +249,13 @@ include 'nlm_header.php';
                 <TD><label class="nlm_label" for="zip">Zip:</label></TD>
                 <TD><input type="text" name="zip" id="zip"/>
             </TR>
+
         </TABLE>
-        
-        Same as Shipping?
-        <input type="checkbox" id="ship" onClick="sameship();"/>
-        <br/>
+            <h3><label class="nlm_label" for="checkbox">Same as Shipping?</label></h3></TD>
+           <h3><input type="checkbox" id="ship" onClick="sameship();"/></h3></TD>
+
+
+
         Billing:<br/>
         First Name
         <input type="text" name="billfirst_name"/>
