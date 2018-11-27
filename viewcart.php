@@ -35,8 +35,9 @@ include 'nlm_header.php';
             sendRequest(url);
         }
 
+        // nlm_note TODO change all == comparison operators to === to eliminate ambiguous warnings
         function sendRequest(url) {
-            if (url == 'ship') {
+            if (url === 'ship') {
                 state = document._xclick.billstate.value;
                 service = document._xclick.service.value;
                 zip = document._xclick.billzip.value;
@@ -133,42 +134,45 @@ include 'nlm_header.php';
             border-style: solid;
             padding: 20px;
         }
+
         .nlm_label {
-            padding-right: 20px;
-            padding-left: 20px;
+            padding-right: 10px;
+            margin-right: 10px;
+            padding-left: 10px;
+            margin-left: 10px;
         }
 
     </style>
 </head>
 <body>
 
-    <section class="jumbotron text-left jumbotron_gradient">
-        <!--
-			<div class="float-left nlm-float-left">
-			<a href="slider/slider.php"><i class="fas fa-sliders-h"></i> Check out our price slider</a></div>
-			<div class="float-left nlm-float-left"><a href="viewcart.php"> <i class="fas fa-shopping-cart"></i> View your cart</a></div><br/>
-	-->
-        <h1 class="display-4">Norlab Shopping Cart
-            <small>"Please review your order."</small>
-        </h1>
-        <p class="lead">"The place where you can find all things internet"</p>
-        <hr class="my-4">
-        <!--<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
+<section class="jumbotron text-left jumbotron_gradient">
+    <!--
+		<div class="float-left nlm-float-left">
+		<a href="slider/slider.php"><i class="fas fa-sliders-h"></i> Check out our price slider</a></div>
+		<div class="float-left nlm-float-left"><a href="viewcart.php"> <i class="fas fa-shopping-cart"></i> View your cart</a></div><br/>
+-->
+    <h1 class="display-4">Norlab Shopping Cart
+        <small>"Please review your order."</small>
+    </h1>
+    <p class="lead">"The place where you can find all things internet"</p>
+    <hr class="my-4">
+    <!--<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
 
-        <!--<row class="container">-->
-        <!--<div class="col-md-4">-->
-        <a class="btn btn-primary btn-lg fas fa-sliders-h" href="slider/slider.php" role="button"> Check out our price
-            slider</a>
-        <!--<a href="slider/slider.php"><i class="fas fa-sliders-h"></i> Check out our price slider</a>-->
-        <!--</div>-->
-        <!--<div class="col-md-4">-->
-        <a class="btn btn-primary btn-lg fas fa-shopping-cart" href="viewcart.php" role="button"> View your cart</a>
-        <!--<a href="viewcart.php"> <i class="btn btn-lg fas fa-shopping-cart"></i> View your cart</a>-->
-        <!--</div>-->
+    <!--<row class="container">-->
+    <!--<div class="col-md-4">-->
+    <a class="btn btn-primary btn-lg fas fa-sliders-h" href="slider/slider.php" role="button"> Check out our price
+        slider</a>
+    <!--<a href="slider/slider.php"><i class="fas fa-sliders-h"></i> Check out our price slider</a>-->
+    <!--</div>-->
+    <!--<div class="col-md-4">-->
+    <a class="btn btn-primary btn-lg fas fa-shopping-cart" href="viewcart.php" role="button"> View your cart</a>
+    <!--<a href="viewcart.php"> <i class="btn btn-lg fas fa-shopping-cart"></i> View your cart</a>-->
+    <!--</div>-->
 
-        <!--</row>-->
-    </section>
-    <main class="container">
+    <!--</row>-->
+</section>
+<main class="container">
 	<?php
 	$removeid = $_GET['remove'];
 	if ( $removeid ) {
@@ -190,25 +194,26 @@ include 'nlm_header.php';
 		$prodid      = $showrow[5];
 		$attribute   = $showrow[6];
 		?>
-        <item class="solid row" >
-        <img src="<?= $root; ?>thumbnail.php?pic=<?= $prodid . '/1.jpg&ht=100&wd=100'; ?>"/><br/>
-		<? echo $name . $attribute; ?> <a href="<?= $root; ?>viewcart.php?remove=<?= $cartitemnum; ?>">Remove</a> <br/>
-        <!--<br>-->
-        Enter Coupon or Gift Certificate Code
-        <input type="text" id="coupon" onblur="makeRequest('coup');"/>
-        <!--<br/>
-        <br>-->
-        <p id="couponresponse"></p>
-        <form action="<?= $root; ?>viewcart.php" method="post">
-            Quantity:
-            <input type="text" name="qty" size="2"
-                   value="<?= $qty; ?>">
+        <item class="solid row">
+            <img src="<?= $root; ?>thumbnail.php?pic=<?= $prodid . '/1.jpg&ht=100&wd=100'; ?>"/><br/>
+			<? echo $name . $attribute; ?> <a href="<?= $root; ?>viewcart.php?remove=<?= $cartitemnum; ?>">Remove</a>
             <br/>
-            <input type="hidden" name="prodid" value="<?= $prodid; ?>"/>
-            <br/>
-            <input type="submit" name="submit" value="update"/>
-            <br/>
-        </form>
+            <!--<br>-->
+            Enter Coupon or Gift Certificate Code
+            <input type="text" id="coupon" onblur="makeRequest('coup');"/>
+            <!--<br/>
+			<br>-->
+            <p id="couponresponse"></p>
+            <form action="<?= $root; ?>viewcart.php" method="post">
+                Quantity:
+                <input type="text" name="qty" size="2"
+                       value="<?= $qty; ?>">
+                <br/>
+                <input type="hidden" name="prodid" value="<?= $prodid; ?>"/>
+                <br/>
+                <input type="submit" name="submit" value="update"/>
+                <br/>
+            </form>
         </item>
 		<?php
 	}
@@ -217,25 +222,35 @@ include 'nlm_header.php';
     <form action="https://www.sandbox.paypal.com/us/cgi-bin/webscr"
           method="post" name="_xclick">
         <h5>Shipping:</h5>
-        <div class="row">
-        <label class="nlm_label" for="first_name">First Name:</label>
-        <input  type="text" name="first_name" value="First Name"/>
+        <!--<div class="row">-->
+        <TABLE BORDER="0">
+            <TR>
+                <TD><label class="nlm_label" for="first_name">First Name:</label></TD>
+                <TD><input type="text" name="first_name" value="First Name"/></TD>
 
-        <label class="nlm_label" for="last_name" class="d-inline">Last Name:</label>
-        <input type="text" name="last_name" value="Last Name"/>
-        </div>
-        <div class="row">
-        <label class="nlm_label" for="address1">Address:</label>
-        <textarea  name="address1" cols="30" rows="5" value="Address"></textarea>
-        </div>
-        <div class="row">
-        <label class="nlm_label" for="city">City:</label>
-        <input type="text" name="city" id="city" value="City"/>
-        <label class="nlm_label" for="state">State:</label>
-        <input type="text" name="state" id="state"/>
-        Zip:
-        <input type="text" name="zip" id="zip"/>
-        <br/>
+                <TD><label class="nlm_label" for="last_name" class="d-inline">Last Name:</label></TD>
+                <TD><input type="text" name="last_name" value="Last Name"/></TD>
+            </TR>
+
+            <!--</div>-->
+            <!--<div class="row">-->
+            <TR>
+                <TD><label class="nlm_label" for="address1">Address:</label></TD>
+                <TD><textarea name="address1" cols="30" rows="5" value="Address"></textarea></TD>
+            </TR>
+
+            <!-- </div>-->
+            <!--<div class="row">-->
+            <TR>
+                <TD><label class="nlm_label" for="city">City:</label></TD>
+                <TD><input type="text" name="city" id="city" value="City"/></TD>
+                <TD><label class="nlm_label" for="state">State:</label></TD>
+                <TD><input type="text" name="state" id="state"/></TD>
+                <TD><label class="nlm_label" for="zip">Zip:</label></TD>
+                <TD><input type="text" name="zip" id="zip"/>
+            </TR>
+        </TABLE>
+        
         Same as Shipping?
         <input type="checkbox" id="ship" onClick="sameship();"/>
         <br/>
