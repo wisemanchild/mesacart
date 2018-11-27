@@ -10,9 +10,10 @@
 	*	Copyright: ( c )2018 Norlab Business Solutions
 	*
 -->
-<!--nlm TODO need to clean up file-->
+<!--<!--nlm TODO need to clean up file-->
+<!--nlm TODO add cookies and session storage-->
 <!--/* added this for responsive design */ -->
-<meta charset="utf-8">
+--><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Main Mesacart Page</title>
@@ -88,7 +89,7 @@ foreach ( $dbh->query( $sql ) as $mainrow ) {
 	print '<div class="card"><img class="card-img-top" src="http://mesacart.nshift360.com/images/' . $new . '" alt="' . $variable . '" alt="Card image cap">
       <div class="card-body">
    		<h5 class="card-title">' . $name . '</h5>
-   		<p class="card-text">If you would like more information about our ' . $name . '<a href="category.php?catid=' . $id . '">
+   		<p class="card-text">If you would like more information about our ' . $name . '<a href="category.php?catid=' . $id . '"><br/>
    		<a href="http://mesacart.nshift360.com/category.php?catid=1&soft=pricehigh">read more</a></p>
       </div>
       	<ul class="list-group list-group-flush justify-content-center">
