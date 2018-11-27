@@ -136,7 +136,7 @@ if ( $qty > 0 ) {
 		$descrip .= '  <a href = "' . $link . '">Read More</a>';
 		$price   = $row[3];
 		$img     = $id . '/1.jpg';
-		echo $name . '<br/>' . $descrip . '<br/>';
+		echo '<h5>' .$name . '</h5><br/>' . $descrip . '<br/>';
 		if ( file_exists( $img ) ) {
 			$size   = getimagesize( $img );
 			$height = $size[1];
@@ -190,6 +190,7 @@ if ( $qty > 0 ) {
     <br/>
 </main>
 <script>
+    /*nlm TODO need to figure out how to sort the page on load */
     function sortOrder() {
         let strDisplayProducts = document.getElementById("sort").value;
         let strCatId = <?php echo $catid ?>;

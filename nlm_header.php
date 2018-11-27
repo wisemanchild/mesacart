@@ -12,6 +12,7 @@
 	*	Copyright: ( c )2018 Norlab Business Solutions
 	*
 -->
+<!--nlm TODO need to clean up file-->
 <head>
 	<meta charset="utf-8">
 	<title>Header File</title>
@@ -29,7 +30,7 @@
 	<!--/*** where the menu nav-bar section starts ***/ -->
 	<header class="container-fluid">
 		<nav class="navbar  sticky-top navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#" class="text-right"><img src="images/logo.png" width=50 height=50
+			<a class="navbar-brand" href="http://mesacart.nshift360.com" class="text-right"><img src="images/logo.png" width=50 height=50
                                                                  alt="Norlab Business Solutions">
             <small>Norlab Business Solutions</small>
         </a>

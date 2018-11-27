@@ -252,7 +252,7 @@ include 'nlm_header.php';
 
         </TABLE>
             <h3><label class="nlm_label" for="checkbox">Same as Shipping?</label></h3></TD>
-           <h3><input type="checkbox" id="ship" onClick="sameship();"/></h3></TD>
+            <h3><input type="checkbox" id="ship" onClick="sameship();"/></h3></TD>
 
 
 

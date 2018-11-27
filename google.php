@@ -1,3 +1,4 @@
+<!--nlm TODO need to analyze this file to see how it works-->
 <?
 session_start();
 include 'connect.php';

@@ -1,3 +1,4 @@
+<!--nlm TODO need to analyze this file to see how it works-->
 Price Filter<br/>
 <?php
 //get max and min prices

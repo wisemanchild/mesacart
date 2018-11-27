@@ -1,4 +1,5 @@
-<?
+<!--nlm TODO need to analyze this file to see how it works-->
+<?php
 $to = $_GET['to'];
 $amt = $_GET['amt'];
 $from = $_GET['from'];

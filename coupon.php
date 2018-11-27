@@ -2,7 +2,7 @@
     *   HTML FILE INFO
 	*	Application: final 173 ecommerce project
 	*	Description: code for the prototype
-	*	File Name: category.php
+	*	File Name: coupon.php
 	*	Author: Norman McWilliams Tester:
 	*	Date created: 11-24-2018 Date updated: 11-24-2018
 	*	Time created: 05:21 pm Time updated: 05:21 pm
@@ -10,6 +10,7 @@
 	*	Copyright: ( c )2018 Norlab Business Solutions
 	*
 -->
+nlm TODO need to analyze this file to see how it works
 <?php
 include 'connect.php';
 $coupon = $_GET['coupon'];
